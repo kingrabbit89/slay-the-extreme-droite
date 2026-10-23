@@ -1,7 +1,6 @@
 <div align="center">
 
 # Slay the Extrême Droite
-### La Tribune
 
 **Un jeu conçu par kingrabbit**
 
@@ -9,9 +8,11 @@ Un deckbuilder politique et satirique : prenez la parole, enchaînez les argumen
 
 **🚧 En développement · Démo jouable v0.2 · Windows 64 bits**
 
-[**🎮 Télécharger la démo**](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/download/v0.2.0/LaTribune-demo-v0.2-Windows.zip) · [**🎬 Voir un combat**](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/download/v0.2.0/LaTribune-combat-v02.mp4) · [**💬 Faire un retour**](https://github.com/kingrabbit89/slay-the-extreme-droite/issues/new/choose)
+[**🎮 Télécharger la démo**](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/download/v0.2.0/SlayTheExtremeDroite-demo-v0.2-Windows.zip) · [**🎬 Voir le clip**](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/download/v0.2.0/SlayTheExtremeDroite-clip-v0.2.mp4) · [**💬 Faire un retour**](https://github.com/kingrabbit89/slay-the-extreme-droite/issues/new/choose)
 
-![Écran titre de Slay the Extrême Droite — La Tribune](docs/images/titre.png)
+[![Aperçu animé de Slay the Extrême Droite — cliquez pour voir le clip avec la musique](docs/images/clip.gif)](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/download/v0.2.0/SlayTheExtremeDroite-clip-v0.2.mp4)
+
+**Cliquez sur l'aperçu pour voir le clip complet : 25 secondes, avec la musique.**
 
 </div>
 
@@ -25,11 +26,11 @@ Un colporteur de rumeurs, un plateau hostile, une halte pour reprendre son souff
 
 ## Essayez la démo
 
-**[Télécharger la démo Windows v0.2 — environ 46 Mo](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/download/v0.2.0/LaTribune-demo-v0.2-Windows.zip)**
+**[Télécharger la démo Windows v0.2 — environ 46 Mo](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/download/v0.2.0/SlayTheExtremeDroite-demo-v0.2-Windows.zip)**
 
 1. Téléchargez le ZIP dans la [release v0.2](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/tag/v0.2.0).
 2. Faites **Extraire tout**.
-3. Ouvrez le dossier **LaTribune**, puis lancez **Jouer.cmd** ou **LaTribune.exe**.
+3. Ouvrez le dossier **SlayTheExtremeDroite**, puis lancez **Jouer.cmd** ou **SlayTheExtremeDroite.exe**.
 
 Conservez les fichiers ensemble. Le jeu est autonome et fonctionne hors ligne : aucune installation de Godot, Rust ou Slay the Spire 2 n'est nécessaire. La musique est incluse.
 
@@ -49,9 +50,9 @@ Conservez les fichiers ensemble. Le jeu est autonome et fonctionne hors ligne : 
 | :---: | :---: |
 | ![Carte jouée et impact sur l'adversaire](docs/images/attaque.png) | ![Choix entre trois cartes après un combat](docs/images/recompense.png) |
 
-**[Regarder 31 secondes de combat réel, avec le son](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/download/v0.2.0/LaTribune-combat-v02.mp4)**
+**[Regarder 31 secondes de combat réel, avec le son](https://github.com/kingrabbit89/slay-the-extreme-droite/releases/download/v0.2.0/SlayTheExtremeDroite-combat-v02.mp4)**
 
-Toutes les images ci-dessus sont des captures de la démo jouable.
+Les captures de jeu ci-dessus proviennent de la démo jouable.
 
 ## Comment jouer
 

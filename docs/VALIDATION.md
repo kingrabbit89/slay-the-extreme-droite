@@ -1,10 +1,12 @@
 # Vérifications de la V0.2
 
+Le 24 octobre, l'export renommé `SlayTheExtremeDroite.exe` passe le même test intégré jusqu'à la victoire. Le clip de présentation dure 25 secondes, en H.264/AAC, 1920 × 1080 à 30 i/s. Les plans de combat sont issus du jeu ; les écrans d'ouverture et de fin sont des titres de montage. Le boss est enregistré depuis la scène réelle avec `demo/tests/capture_boss.gd`, sans utiliser de sauvegarde personnelle.
+
 Vérifications effectuées le 23 octobre 2026 sous Windows x64, Godot 4.5 stable et Rust 1.99.1, sur une GeForce GTX 1660 Ti en OpenGL 3.3.
 
 Mise à jour du 24 octobre : nouvelle interface, animations de combat et musique MP3. Les 19 tests Rust passent toujours. Le test graphique étendu passe dans le projet puis dans l'exécutable Windows exporté : sélection à la souris, attaque et PV, défense et Bloc, tour ennemi, défausse et pioche, agrandissement d'une carte par événement de souris, mode mouvements réduits, chargement/lecture/boucle du MP3, fenêtre des volumes, puis parcours complet jusqu'à la victoire. Code de sortie 0 et marqueur `UI_SMOKE_OK`.
 
-Captures supplémentaires examinées : impact, bouclier, distribution en mouvement, carte au survol et réglages audio. Une partie du premier combat est enregistrée avec le mode Movie Maker de Godot, jusqu'à sa récompense : `build/LaTribune-combat-v02.mp4`, 31,4 secondes, 1440 × 810 à 30 i/s, avec la musique et les bruitages du jeu. Les séquences ont été inspectées en planches de frames. La copie intégrée de Planète brûlée a le même SHA-256 que le fichier fourni.
+Captures supplémentaires examinées : impact, bouclier, distribution en mouvement, carte au survol et réglages audio. Une partie du premier combat est enregistrée avec le mode Movie Maker de Godot, jusqu'à sa récompense : `build/SlayTheExtremeDroite-combat-v02.mp4`, 31,4 secondes, 1440 × 810 à 30 i/s, avec la musique et les bruitages du jeu. Les séquences ont été inspectées en planches de frames. La copie intégrée de Planète brûlée a le même SHA-256 que le fichier fourni.
 
 ## Moteur Rust
 

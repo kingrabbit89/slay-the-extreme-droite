@@ -213,7 +213,7 @@ func show_menu() -> void:
 	text(page,"UN DECKBUILDER POLITIQUE · DÉMO 0.2",Vector2(84,66),Vector2(630,28),16,GOLD)
 	text(page,"SLAY THE",Vector2(80,151),Vector2(680,75),58,CREAM,true)
 	text(page,"EXTRÊME\nDROITE",Vector2(80,224),Vector2(710,180),70,CREAM,true)
-	text(page,"L A   T R I B U N E",Vector2(86,436),Vector2(600,40),25,GREEN)
+	text(page,"Un jeu conçu par kingrabbit",Vector2(86,436),Vector2(600,40),25,GREEN)
 	var pitch := text(page,"La nuit tombe sur le Grand Débat.\nPrenez la parole. Construisez vos enchaînements.\nFaites taire la Machine à peur.",Vector2(86,503),Vector2(630,102),23,MUTED)
 	pitch.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	button(page,"ENTRER DANS LE DÉBAT  →",Vector2(86,641),Vector2(410,62),new_run,true)
@@ -223,7 +223,7 @@ func show_menu() -> void:
 	button(page,"Les 20 cartes",Vector2(299,786),Vector2(198,44),func(): show_collection(core.catalog(),"Les cartes de Mathilde"))
 	sprite(page,0,Vector2(917,228),Vector2(520,534))
 	text(page,"MATHILDE PANOT",Vector2(920,775),Vector2(520,40),28,CREAM,true,true)
-	text(page,"La Tribune  /  Amendements & enchaînements",Vector2(850,821),Vector2(660,30),18,GREEN,false,true)
+	text(page,"Amendements & enchaînements",Vector2(850,821),Vector2(660,30),18,GREEN,false,true)
 	text(page,"1 personnage · 3 combats · 20 cartes · environ 10 minutes",Vector2(86,854),Vector2(800,25),14,MUTED)
 	button(page,"Son : " + ("OFF" if sound.muted else "ON"),Vector2(1400,32),Vector2(150,40),toggle_sound)
 
@@ -807,7 +807,7 @@ func draw_end() -> void:
 	text(page,"%d cartes jouées    /    %d dégâts infligés    /    %d PV restants" % [state.total_cards,state.total_damage,state.hp],Vector2(240,494),Vector2(1120,40),22,GOLD,false,true)
 	button(page,"NOUVELLE TRAVERSÉE",Vector2(440,610),Vector2(340,65),new_run,true)
 	button(page,"Retour au titre",Vector2(820,610),Vector2(340,65),show_menu)
-	text(page,"Fin de la démo · La Tribune · Godot + Rust",Vector2(240,720),Vector2(1120,28),16,MUTED,false,true)
+	text(page,"Slay the Extrême Droite · Démo conçue par kingrabbit",Vector2(240,720),Vector2(1120,28),16,MUTED,false,true)
 
 func modal(title: String) -> Panel:
 	for c in overlay.get_children(): c.queue_free()

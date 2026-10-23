@@ -16,10 +16,10 @@ try {
     & $godotExecutable --headless --path demo --editor --import --quit
     if ($LASTEXITCODE -ne 0) { throw "L'import Godot a échoué." }
     if ($Export) {
-        New-Item -ItemType Directory -Force -Path 'build/LaTribune' | Out-Null
-        & $godotExecutable --headless --path demo --export-release 'Windows Desktop' '../build/LaTribune/LaTribune.exe'
+        New-Item -ItemType Directory -Force -Path 'build/SlayTheExtremeDroite' | Out-Null
+        & $godotExecutable --headless --path demo --export-release 'Windows Desktop' '../build/SlayTheExtremeDroite/SlayTheExtremeDroite.exe'
         if ($LASTEXITCODE -ne 0) { throw "L'export Windows a échoué." }
-        Copy-Item -LiteralPath 'README.md' -Destination 'build/LaTribune/LIRE-MOI.md'
-        Copy-Item -LiteralPath 'docs' -Destination 'build/LaTribune' -Recurse -Force
+        Copy-Item -LiteralPath 'README.md' -Destination 'build/SlayTheExtremeDroite/LIRE-MOI.md'
+        Copy-Item -LiteralPath 'docs' -Destination 'build/SlayTheExtremeDroite' -Recurse -Force
     }
 } finally { Pop-Location }

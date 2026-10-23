@@ -1,6 +1,6 @@
 # Crédits
 
-**Slay the Extrême Droite — La Tribune est un jeu conçu par kingrabbit.**
+**Slay the Extrême Droite est un jeu conçu par kingrabbit.**
 
 - Conception et direction du projet : **kingrabbit**.
 - Développement : Godot et Rust, avec assistance de Codex.

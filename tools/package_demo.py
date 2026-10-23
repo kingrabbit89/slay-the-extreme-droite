@@ -2,18 +2,18 @@ from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 
 root = Path(__file__).resolve().parent.parent
-source = root / "build" / "LaTribune"
-archive = root / "build" / "LaTribune-demo-v0.2-Windows.zip"
-guide = """SLAY THE EXTREME DROITE - LA TRIBUNE
+source = root / "build" / "SlayTheExtremeDroite"
+archive = root / "build" / "SlayTheExtremeDroite-demo-v0.2-Windows.zip"
+guide = """SLAY THE EXTREME DROITE
 Un jeu concu par kingrabbit
 Demo 0.2 - Windows 10/11, 64 bits
 
 DEMARRAGE
 1. Extraire tout le ZIP (clic droit > Extraire tout).
-2. Ouvrir le dossier LaTribune.
-3. Double-cliquer sur Jouer.cmd ou LaTribune.exe.
+2. Ouvrir le dossier SlayTheExtremeDroite.
+3. Double-cliquer sur Jouer.cmd ou SlayTheExtremeDroite.exe.
 
-Conserver LaTribune.exe, LaTribune.pck et tribune_godot.dll ensemble.
+Conserver SlayTheExtremeDroite.exe, SlayTheExtremeDroite.pck et tribune_godot.dll ensemble.
 Aucune installation de Godot, Rust ou Slay the Spire 2 n'est necessaire.
 Le jeu fonctionne hors ligne. La musique est incluse.
 
@@ -52,16 +52,16 @@ Le groupe : https://linktr.ee/planeteboumboum
 Credits complets et informations sur les ressources : dossier docs.
 """
 with ZipFile(archive, "w", ZIP_DEFLATED, compresslevel=6) as z:
-    for name in ("LaTribune.exe", "LaTribune.pck", "tribune_godot.dll"):
-        z.write(source / name, "LaTribune/" + name)
+    for name in ("SlayTheExtremeDroite.exe", "SlayTheExtremeDroite.pck", "tribune_godot.dll"):
+        z.write(source / name, "SlayTheExtremeDroite/" + name)
     for p in sorted((source / "docs").rglob("*")):
-        if p.is_file():
-            z.write(p, "LaTribune/" + p.relative_to(source).as_posix())
-    z.writestr("LaTribune/Jouer.cmd", '@echo off\r\ncd /d "%~dp0"\r\nstart "" "%~dp0LaTribune.exe"\r\n')
-    z.writestr("LaTribune/LIRE-MOI.txt", guide.replace("\n", "\r\n").encode("utf-8-sig"))
+        if p.is_file() and "images" not in p.relative_to(source).parts:
+            z.write(p, "SlayTheExtremeDroite/" + p.relative_to(source).as_posix())
+    z.writestr("SlayTheExtremeDroite/Jouer.cmd", '@echo off\r\ncd /d "%~dp0"\r\nstart "" "%~dp0SlayTheExtremeDroite.exe"\r\n')
+    z.writestr("SlayTheExtremeDroite/LIRE-MOI.txt", guide.replace("\n", "\r\n").encode("utf-8-sig"))
 with ZipFile(archive) as z:
     assert z.testzip() is None
     assert not any("/saves/" in n or ".." in Path(n).parts for n in z.namelist())
-    assert len(z.read("LaTribune/LaTribune.pck")) == (source / "LaTribune.pck").stat().st_size
+    assert len(z.read("SlayTheExtremeDroite/SlayTheExtremeDroite.pck")) == (source / "SlayTheExtremeDroite.pck").stat().st_size
     print(f"Archive verified: {archive.name}, {archive.stat().st_size:,} bytes, {len(z.namelist())} files")
     z.extractall(root / "build" / "package-check-v02")

@@ -1,10 +1,10 @@
-# Slay the Extrême Droite — La Tribune
+# Slay the Extrême Droite
 
 Démo autonome Windows, version 0.2. Godot 4.5 pour la présentation, Rust pour toutes les règles de jeu. Aucune installation de Slay the Spire 2 n'est nécessaire.
 
 ## Jouer
 
-Double-cliquer sur **Jouer.cmd** à la racine du projet, ou sur **build/LaTribune/LaTribune.exe**. Conserver l'exécutable, le fichier `.pck` et la DLL dans le même dossier. Aucun compte, serveur ou accès Internet nécessaire.
+Double-cliquer sur **Jouer.cmd** à la racine du projet, ou sur **build/SlayTheExtremeDroite/SlayTheExtremeDroite.exe**. Conserver l'exécutable, le fichier `.pck` et la DLL dans le même dossier. Aucun compte, serveur ou accès Internet nécessaire.
 
 - Cliquer sur une carte Attaque, puis sur l'adversaire.
 - Les Compétences se jouent directement ; les effets demandant un choix ouvrent une sélection.
