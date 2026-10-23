@@ -1,0 +1,9 @@
+* text=auto
+*.gd text eol=lf
+*.gdshader text eol=lf
+*.rs text eol=lf
+*.md text eol=lf
+*.cmd text eol=crlf
+*.png binary
+*.mp3 binary
+*.wav binary

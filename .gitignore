@@ -1,0 +1,22 @@
+/target/
+/tools/godot/
+/tools/*.zip
+/demo/.godot/
+/demo/bin/*.dll
+/demo/bin/*.pdb
+/build/
+/saves/
+*.tmp
+# Local research, reference games and personal media are never published.
+/Fichiers du jeu slay the spire 2/
+/Musiques/
+/Recherches visuelles/
+/visual-inventory.jpg
+/tools/*.exe
+/tools/*.tpz
+/.codex/
+/.agents/
+/.env
+/.env.*
+*.log
+

@@ -1,0 +1,33 @@
+name: Signaler un problème
+description: Un souci pendant votre partie ? Décrivez-le ici.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Que s'est-il passé ?
+      description: Décrivez le problème et ce que vous attendiez.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Comment reproduire le problème ?
+      description: Carte jouée, ennemi ciblé, tour, actions précédentes…
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version de la démo
+      placeholder: "0.2"
+  - type: input
+    id: system
+    attributes:
+      label: Configuration
+      placeholder: Version de Windows, carte graphique si connue
+  - type: textarea
+    id: media
+    attributes:
+      label: Capture ou vidéo
+      description: Vous pouvez glisser une image ou une courte vidéo ici.

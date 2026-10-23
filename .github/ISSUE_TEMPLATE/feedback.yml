@@ -1,0 +1,21 @@
+name: Retour sur la démo
+description: Partagez votre ressenti et vos idées.
+title: "[Retour] "
+body:
+  - type: textarea
+    id: experience
+    attributes:
+      label: Votre expérience
+      description: Ce qui vous a plu, ce qui manque, ce qui vous a semblé confus.
+    validations:
+      required: true
+  - type: textarea
+    id: balance
+    attributes:
+      label: Difficulté et rythme
+      description: Avez-vous atteint le boss ? Certaines cartes vous semblent-elles trop fortes ou trop faibles ?
+  - type: textarea
+    id: presentation
+    attributes:
+      label: Images, animations et son
+      description: Lisibilité des cartes, effets de combat, interface, volumes…

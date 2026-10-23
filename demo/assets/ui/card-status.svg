@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="300" viewBox="0 0 200 300"><defs>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b8b8b7"/><stop offset=".26" stop-color="#696969"/><stop offset=".55" stop-color="#292d31"/><stop offset=".8" stop-color="#696969"/><stop offset="1" stop-color="#b8b8b7"/></linearGradient>
+<linearGradient id="body" x2="0" y2="1"><stop stop-color="#292d31"/><stop offset="1" stop-color="#161f26"/></linearGradient>
+<linearGradient id="silver" x2="0" y2="1"><stop stop-color="#b8b8ad"/><stop offset=".35" stop-color="#6b777c"/><stop offset=".55" stop-color="#414d55"/><stop offset="1" stop-color="#8c9695"/></linearGradient>
+<radialGradient id="gem" cx=".38" cy=".3" r=".7"><stop stop-color="#ffe2a0"/><stop offset=".4" stop-color="#d77a35"/><stop offset="1" stop-color="#702c27"/></radialGradient></defs>
+<path d="M14 6 L184 6 L195 21 L195 278 L184 295 L15 295 L5 279 L5 22 Z M17 45 L183 45 L183 151 L17 151 Z" fill-rule="evenodd" fill="url(#body)" stroke="#10171c" stroke-width="6"/>
+<path d="M14 6 L184 6 L195 21 L195 278 L184 295 L15 295 L5 279 L5 22 Z" fill="none" stroke="url(#metal)" stroke-width="7"/>
+<path d="M18 13 L180 13 L188 25 L188 276 L180 287 L20 287 L12 277 L12 25 Z" fill="none" stroke="#b8b8b7" stroke-width="1.1" opacity=".65"/>
+<path d="M16 44 L184 44 L184 143 Q100 168 16 143 Z" fill="none" stroke="url(#metal)" stroke-width="5"/>
+<path d="M7 29 L18 16 Q94 9 189 20 L197 39 L186 52 L181 38 Q98 34 21 44 L4 55 Z" fill="url(#silver)" stroke="#303942" stroke-width="1.5"/>
+<path d="M21 18 Q100 11 187 22" fill="none" stroke="#e9e0c9" stroke-width="1.5" opacity=".8"/>
+<path d="M64 153 L137 153 L145 169 L57 169 Z" fill="url(#silver)" stroke="#b2b8b2" stroke-width="1"/>
+<path d="M10 271 L20 284 L65 284 M190 271 L179 284 L139 284" fill="none" stroke="#b8b8b7" stroke-width="2" opacity=".6"/>
+<path d="M100 279 L107 286 L100 293 L93 286 Z" fill="#696969" stroke="#b8b8b7"/>
+<path d="M23 0 C43 13 48 25 40 39 C32 51 9 49 3 34 C-1 23 12 7 23 0Z" fill="#612729" stroke="#27282b" stroke-width="2"/>
+<ellipse cx="23" cy="26" rx="16" ry="20" fill="url(#gem)" stroke="#f1ca71" stroke-width="2"/>
+<path d="M14 17 Q17 9 25 9" fill="none" stroke="#fff5cb" stroke-width="2" opacity=".8"/></svg>
